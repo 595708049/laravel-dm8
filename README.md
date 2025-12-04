@@ -6,7 +6,7 @@ Laravel11-DM8 is an Dm Database Driver package for [Laravel 11](http://laravel.c
 
 ## Documentations
 
-- You will find user-friendly and updated documentation here: [Laravel11-DM8 Docs](https://github.com/july/laravel11-dm8)
+- You will find user-friendly and updated documentation here: [Laravel11-DM8 Docs](https://github.com/wangl/laravel11-dm8)
 - All about dm and php:[The Underground PHP and Dm Manual](https://eco.dameng.com/document/dm/zh-cn/app-dev/php-php.html)
 
 ## Laravel Version Compatibility
@@ -19,7 +19,7 @@ Laravel11-DM8 is an Dm Database Driver package for [Laravel 11](http://laravel.c
 ## Quick Installation
 
 ```bash
-composer require july/laravel11-dm8
+composer require wangl/laravel11-dm8
 ```
 
 ## Service Provider (Optional on Laravel 5.5+)
@@ -58,4 +58,4 @@ Then run your laravel installation...
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[link-author]: https://github.com/july
+[link-author]: https://github.com/wangl

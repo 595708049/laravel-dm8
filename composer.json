@@ -1,10 +1,10 @@
 {
-    "name": "july/laravel11-dm8",
+    "name": "wangl/laravel11-dm8",
     "description": "达梦数据库 DM8 的 Laravel 11 适配器",
     "license": "MIT",
     "authors": [
         {
-            "name": "July",
+            "name": "WangL",
             "email": "your-email@example.com"
         }
     ],
