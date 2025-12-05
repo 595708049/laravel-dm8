@@ -42,7 +42,7 @@ This will copy the configuration file to `config/database.php`.
 ```ini
  'connections' => [
         'mysql' => [
-           ¡­¡­¡­¡­
+           â€¦â€¦â€¦â€¦Â­
         ],
 
         'dm' => [
