@@ -24,7 +24,7 @@ composer require wangl/laravel-dm8
 
 ## Service Provider (Optional on Laravel 5.5+)
 
-Once Composer has installed or updated your packages you need to register Laravel-DM8. Open up `config/app.php` and find the providers key and add:
+一旦 Composer 安装或更新了你的软件包，你需要注册 Laravel-DM8。打开 `config/app.php`，找到 providers 键并添加：
 
 ```php
 LaravelDm8\Dm8\Dm8ServiceProvider::class,
@@ -32,10 +32,9 @@ LaravelDm8\Dm8\Dm8ServiceProvider::class,
 
 ## Configuration (OPTIONAL)
 
-Finally you can optionally publish a configuration file by running the following Artisan command.
-If config file is not publish, the package will automatically use what is declared on your `.env` file database configuration.
+最后，您可以通过运行以下 Artisan 命令选择性地发布配置文件。如果配置文件未发布，包将自动使用您 `.env` 文件中声明的数据库配置。
 
-This will copy the configuration file to `config/database.php`.
+这将把配置文件复制到 `config/database.php`。
 
 > Then, you can set connection data in your `.env` files:
 
