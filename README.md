@@ -1,13 +1,16 @@
-# 通过 DM8 为 Laravel 提供的 DM 数据库驱动
+本项目基于 jackfinal/laravel-dm8 构建，并针对 Laravel10，Laravel11 进行了适配与改进。
+- 源项目GitHub: https://github.com/Jackfinal/laravel-dm8.git
+
+# DM DB driver for Laravel via DM8
 
 ## Laravel-DM8
 
-Laravel-DM8 是一个适用于 Laravel 的 Dm 数据库驱动包。Laravel-DM8 是 Illuminate/Database 的一个扩展，使用 DM8 扩展与 Dm 进行通信。感谢 @yajra。
+Laravel-DM8 is an Dm Database Driver package for [Laravel](http://laravel.com/). Laravel-DM8 is an extension of [Illuminate/Database](https://github.com/illuminate/database) that uses [DM8](https://eco.dameng.com/document/dm/zh-cn/faq/faq-php.html#PHP-Startup-Unable-to-load-dynamic-library) extension to communicate with Dm. Thanks to @yajra.
 
 ## Documentations
 
-- 您可以在这里找到用户友好且更新的文档：[Laravel-DM8 文档](https://github.com/595708049/laravel-dm8)
-- 关于 dm 和 php 的所有内容：[ PHP 和 Dm 手册](https://eco.dameng.com/document/dm/zh-cn/app-dev/php-php.html)
+- You will find user-friendly and updated documentation here: [Laravel-DM8 Docs](https://github.com/wangl/laravel-dm8)
+- All about dm and php:[The Underground PHP and Dm Manual](https://eco.dameng.com/document/dm/zh-cn/app-dev/php-php.html)
 
 ## Laravel Version Compatibility
 
@@ -24,7 +27,7 @@ composer require wangl/laravel-dm8
 
 ## Service Provider (Optional on Laravel 5.5+)
 
-一旦 Composer 安装或更新了你的软件包，你需要注册 Laravel-DM8。打开 `config/app.php`，找到 providers 键并添加：
+Once Composer has installed or updated your packages you need to register Laravel-DM8. Open up `config/app.php` and find the providers key and add:
 
 ```php
 LaravelDm8\Dm8\Dm8ServiceProvider::class,
@@ -32,16 +35,17 @@ LaravelDm8\Dm8\Dm8ServiceProvider::class,
 
 ## Configuration (OPTIONAL)
 
-最后，您可以通过运行以下 Artisan 命令选择性地发布配置文件。如果配置文件未发布，包将自动使用您 `.env` 文件中声明的数据库配置。
+Finally you can optionally publish a configuration file by running the following Artisan command.
+If config file is not publish, the package will automatically use what is declared on your `.env` file database configuration.
 
-这将把配置文件复制到 `config/database.php`。
+This will copy the configuration file to `config/database.php`.
 
 > Then, you can set connection data in your `.env` files:
 
 ```ini
  'connections' => [
         'mysql' => [
-           …………
+           …………­
         ],
 
         'dm' => [
