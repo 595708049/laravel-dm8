@@ -7,7 +7,7 @@ Laravel-DM8 是一个适用于 Laravel 的 Dm 数据库驱动包。Laravel-DM8 �
 ## Documentations
 
 - 您可以在这里找到用户友好且更新的文档：[Laravel-DM8 文档](https://github.com/595708049/laravel-dm8)
-- 关于 dm 和 php 的所有内容：[地下 PHP 和 Dm 手册](https://eco.dameng.com/document/dm/zh-cn/app-dev/php-php.html)
+- 关于 dm 和 php 的所有内容：[ PHP 和 Dm 手册](https://eco.dameng.com/document/dm/zh-cn/app-dev/php-php.html)
 
 ## Laravel Version Compatibility
 
