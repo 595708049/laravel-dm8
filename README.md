@@ -6,7 +6,7 @@ Laravel11-DM8 is an Dm Database Driver package for [Laravel 11](http://laravel.c
 
 ## Documentations
 
-- You will find user-friendly and updated documentation here: [Laravel11-DM8 Docs](https://github.com/wangl/laravel11-dm8)
+- You will find user-friendly and updated documentation here: [Laravel11-DM8 Docs](https://github.com/595708049/laravel11-dm8)
 - All about dm and php:[The Underground PHP and Dm Manual](https://eco.dameng.com/document/dm/zh-cn/app-dev/php-php.html)
 
 ## Laravel Version Compatibility
@@ -35,21 +35,34 @@ LaravelDm8\Dm8\Dm8ServiceProvider::class,
 Finally you can optionally publish a configuration file by running the following Artisan command.
 If config file is not publish, the package will automatically use what is declared on your `.env` file database configuration.
 
-```bash
-php artisan vendor:publish --tag=dm
-```
-
-This will copy the configuration file to `config/dm.php`.
+This will copy the configuration file to `config/database.php`.
 
 > Then, you can set connection data in your `.env` files:
 
 ```ini
-DB_CONNECTION=dm8
-DB_HOST=localhost
-DB_PORT=5236
-DB_DATABASE=your_database
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
+ 'connections' => [
+        'mysql' => [
+           ¡­¡­¡­¡­
+        ],
+
+        'dm' => [
+            'driver'         => 'dm',
+            'host'           => env('DB_HOST', '127.0.0.1'),
+            'port'           => env('DB_PORT', '5236'),
+            'database'       => env('DB_DATABASE', 'laravel'),
+            'username'       => env('DB_USERNAME', 'laravel'),
+            'password'       => env('DB_PASSWORD', 'laravel'),
+            'charset'        => 'UTF8',
+            'collation'      => 'utf8_general_ci',
+            'prefix'         => '',
+            'strict'         => true,
+            'engine'         => null,
+            'options' => [
+                \PDO::ATTR_PERSISTENT => true,
+                \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+            ],
+        ],
+    ],
 ```
 
 Then run your laravel installation...
