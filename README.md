@@ -42,7 +42,7 @@ This will copy the configuration file to `config/database.php`.
 ```ini
  'connections' => [
         'mysql' => [
-           …………­
+           …………
         ],
 
         'dm' => [
@@ -71,4 +71,4 @@ Then run your laravel installation...
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[link-author]: https://github.com/wangl
+[link-author]: https://github.com/595708049

@@ -44,7 +44,9 @@
                 "LaravelDm8\\Dm8\\Dm8ServiceProvider",
                 "LaravelDm8\\Dm8\\Dm8ValidationServiceProvider"
             ]
-        }
+        },
+        "original-package": "Jackfinal/laravel-dm8",
+        "original-repository": "https://github.com/Jackfinal/laravel-dm8"
     },
     "config": {
         "sort-packages": true
