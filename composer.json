@@ -1,6 +1,6 @@
 {
-    "name": "wangl/laravel11-dm8",
-    "description": "达梦数据库 DM8 的 Laravel 11 适配器",
+    "name": "wangl/laravel-dm8",
+    "description": "修改可以适配laravel10+,11+框架的dm driver",
     "license": "MIT",
     "authors": [
         {

@@ -1,12 +1,12 @@
-# DM DB driver for Laravel 11 via DM8
+# DM DB driver for Laravel via DM8
 
-## Laravel11-DM8
+## Laravel-DM8
 
-Laravel11-DM8 is an Dm Database Driver package for [Laravel 11](http://laravel.com/). Laravel11-DM8 is an extension of [Illuminate/Database](https://github.com/illuminate/database) that uses [DM8](https://eco.dameng.com/document/dm/zh-cn/faq/faq-php.html#PHP-Startup-Unable-to-load-dynamic-library) extension to communicate with Dm. Thanks to @yajra.
+Laravel-DM8 is an Dm Database Driver package for [Laravel](http://laravel.com/). Laravel-DM8 is an extension of [Illuminate/Database](https://github.com/illuminate/database) that uses [DM8](https://eco.dameng.com/document/dm/zh-cn/faq/faq-php.html#PHP-Startup-Unable-to-load-dynamic-library) extension to communicate with Dm. Thanks to @yajra.
 
 ## Documentations
 
-- You will find user-friendly and updated documentation here: [Laravel11-DM8 Docs](https://github.com/595708049/laravel11-dm8)
+- You will find user-friendly and updated documentation here: [Laravel-DM8 Docs](https://github.com/wangl/laravel-dm8)
 - All about dm and php:[The Underground PHP and Dm Manual](https://eco.dameng.com/document/dm/zh-cn/app-dev/php-php.html)
 
 ## Laravel Version Compatibility
@@ -19,12 +19,12 @@ Laravel11-DM8 is an Dm Database Driver package for [Laravel 11](http://laravel.c
 ## Quick Installation
 
 ```bash
-composer require wangl/laravel11-dm8
+composer require wangl/laravel-dm8
 ```
 
 ## Service Provider (Optional on Laravel 5.5+)
 
-Once Composer has installed or updated your packages you need to register Laravel11-DM8. Open up `config/app.php` and find the providers key and add:
+Once Composer has installed or updated your packages you need to register Laravel-DM8. Open up `config/app.php` and find the providers key and add:
 
 ```php
 LaravelDm8\Dm8\Dm8ServiceProvider::class,
